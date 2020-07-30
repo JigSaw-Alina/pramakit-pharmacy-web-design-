@@ -1,0 +1,176 @@
+
+
+.footer .container__footer 
+{
+    position: relative;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 10px 30px;
+}
+
+
+.footer .container__footer .footer__contentBx 
+{
+    padding: 40px;
+    padding-top: 30px;
+    padding-left: 50px;
+    width: 70%;    
+}
+
+
+.footer .container__footer h3
+{
+    color: $green;
+    padding-bottom: 15px;
+    list-style: none;
+}
+
+
+.footer .container__footer .footer__about
+{
+    padding: 20px;
+    line-height: 1.7;
+    margin: 0%;
+    width: 100%;
+    color: $off-black;
+}
+
+.footer .container__footer .footer__nav 
+{
+    padding: 25px 70px;
+    line-height: 1.8;
+    color: $off-black;
+}
+
+.footer .container__footer .footer__nav ul 
+{
+    list-style-type: none;  
+}
+
+.footer .container__footer .footer__nav ul li:hover
+{
+    color: $green;
+}
+
+.footer .container__footer .footer_Info
+{
+    padding: 25px 0%;
+    line-height: 2;
+    color: $off-black;
+}
+
+.footer .container__footer .footer_Info ul 
+{
+    list-style-type: none;  
+}
+
+.footer .footer__copyright 
+{
+    padding: 2rem;
+    text-align: center;
+    font-weight: 700;
+    color:$off-black;
+}
+
+.footer__contentBx .footer_Info ul li span {
+    color:  $green;
+    padding-right: 10px;
+}
+
+
+@include mediaLg
+{
+
+
+    .footer .container__footer 
+    {
+        flex-direction: column;
+    }
+
+
+    .footer .container__footer .footer__nav 
+    {
+        padding: 25px 20px;
+    }
+
+
+    .footer .container__footer .footer_Info 
+    {
+        padding: 25px;
+    }
+
+    .footer .container__footer .footer__contentBx 
+    {
+        padding: 0% 40px;
+    }
+}
+
+
+
+@include mediaMd 
+{
+    
+    .footer .container__footer 
+    {
+        flex-direction: column;
+    }
+
+    .footer .container__footer .footer__nav 
+    {
+        padding: 25px 20px;
+    }
+
+    .footer .container__footer .footer_Info 
+    {
+        padding: 25px;
+    }
+
+    .footer .container__footer .footer__contentBx 
+    {
+        padding: 0%;
+    }
+
+    .footer .footer__copyright 
+    {      
+        line-height: 1.5rem;
+    }
+
+}
+
+
+@include mediaSm 
+{
+
+    .site-wrap 
+    {
+        width: 500px;
+    }
+
+    .footer .container__footer 
+    {
+        flex-direction: column;
+    }
+
+    .footer .container__footer .footer__nav 
+    {
+        padding: 25px 20px;
+    }
+
+    .footer .container__footer .footer_Info 
+    {
+        padding: 25px;
+    }
+
+    .footer .container__footer .footer__contentBx 
+    {
+        padding: 0%;
+    }
+
+    .footer .footer__copyright 
+    {
+        text-align: center;
+        font-weight: 500;
+
+    }
+}

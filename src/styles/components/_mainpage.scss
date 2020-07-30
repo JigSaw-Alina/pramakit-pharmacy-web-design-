@@ -1,0 +1,147 @@
+.main_page 
+{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 50vh;
+    padding: 50px 50px 50px;
+    text-align: end;
+    
+}
+.imageMed__second img
+{
+    display: none;
+}
+.main_page .hero_content 
+{
+    padding: 0% 20px;
+}
+.main_page .main_title 
+{
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: $off-black;
+    letter-spacing: 3px;
+    padding-bottom: 1rem;
+}
+
+.main_page .main_title_second
+{
+    color: $green;
+}
+
+.main_page .main__image img 
+{
+    max-width: 90vh;   
+    margin: 0 30px;
+}
+
+
+.main_page p
+{
+  padding: 1rem 0;
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 1.6;
+  margin: 0%;
+}
+
+
+.main_page a 
+{
+    display: inline-block;
+    font-weight: 590;
+    border: solid 1px $black;
+    color: $green;
+    padding: 10px 30px;
+    background: $white;
+    text-decoration: none;
+}
+
+
+@include mediaLg 
+{
+    .main_page img 
+    {
+        display: none;
+    }
+
+    .imageMed__second img
+    {
+        display: block;
+        max-width: 90vh;   
+    }
+
+
+    .main_page 
+    {
+        text-align: center;
+    }
+}
+
+@include mediaMd 
+{
+    .main_page img 
+    {
+        display: none;
+    }
+
+    .imageMed__second img
+    {
+        display: block;
+        max-width: 50vh;   
+    }
+
+    .main_page 
+    {
+        text-align: center;
+        padding: 20px 20px 20px;
+    }
+
+    .main_page .main_title 
+    {
+        font-size: 2rem; 
+    }
+    .main_page p 
+    {
+        line-height: 1.7;
+    }
+}
+
+@include mediaSm 
+{
+
+    .site-wrap .section_container .main_page .hero_content
+    {
+        width: 500px;
+        margin: auto;
+    }       
+
+    .main_page img 
+    {
+        display: none;
+    }
+
+    .imageMed__second img
+    {
+        display: inline-flex;
+        max-width: 60vh;   
+        align-content: center;
+    }
+
+    .main_page 
+    {
+        text-align: center;
+        padding: 20px 20px 20px;
+    }
+
+    .main_page .main_title 
+    {
+        font-size: 2rem; 
+    }
+    .main_page p 
+    {
+        line-height: 1.7;
+    }
+}

@@ -1,0 +1,109 @@
+.store
+{
+    background: $off-white;
+    padding: 50px 100px 0;
+    text-align: center;
+}
+
+.store .store_container 
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-top: 60px;
+}
+
+.store .store_container .storeBx img 
+{
+    max-width: 80px;
+}
+
+
+.store .store_container .storeBx h3
+{
+    color: $green;
+    padding-bottom: 1rem;
+    list-style: none;
+}
+
+.store .store_container .storeBx a
+{
+   color: $green;
+   text-decoration: none;
+}
+
+.store .store_container .storeBx a:hover 
+{
+    color: $darkgreen;
+}
+
+.store .store_container .storeBx a::after
+{
+    content: "\e315"
+}
+
+.store .store_container .storeBx p 
+{
+    color: #636363;
+    padding-bottom: 2rem;
+    line-height: 2rem;
+    
+}
+
+
+.store .store_container .storeBx 
+{
+    position: relative;
+    width: 350px;
+    height: 400px;
+    display: flex;
+    text-align: start;
+}
+
+@include mediaLg 
+{
+    .store .store_container 
+    {
+        flex-direction: column;
+        align-items: flex-start;
+    } 
+
+    .store .store_container .storeBx {
+        width: 460px;
+        height: 300px;
+        padding-left: 4rem;
+    }
+}
+
+@include mediaMd 
+{
+    .store .store_container 
+    {
+        flex-direction: column;
+        align-items: flex-start;
+    } 
+
+    .store .store_container .storeBx
+    {
+        width: 250px;
+        height: 350px;
+    }
+} 
+
+
+@include mediaSm 
+{
+    .store .store_container 
+    {
+        flex-direction: column;
+        align-items: flex-start;
+    } 
+
+    .store .store_container .storeBx
+    {
+        height: 300px;
+    }
+  
+}

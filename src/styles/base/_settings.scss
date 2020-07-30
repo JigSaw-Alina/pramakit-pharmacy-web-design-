@@ -1,0 +1,39 @@
+// colors 
+$white: #ffff;
+$off-white: #f8f9fa;
+$green:#75b239;
+$darkgreen: #006e1f;
+$black: #000;
+$off-black: #2e2e2e;
+
+
+
+// Media Queary Mixins 
+
+@mixin mediaSm {
+    @media only screen 
+    and (min-width: 320px) 
+    and (max-width: 499px)
+    and (-webkit-min-device-pixel-ratio: 1) {
+        @content;
+    }   
+}
+
+@mixin mediaMd {
+    @media only screen 
+    and (min-width: 500px) 
+    and (max-width: 667px)
+    and (-webkit-min-device-pixel-ratio: 1) {
+        @content;
+    }   
+   
+}
+
+@mixin mediaLg {
+    @media only screen 
+    and (min-width: 668px) 
+    and (max-width: 1024px) 
+    and (-webkit-min-device-pixel-ratio: 1) {
+        @content;
+  }
+}

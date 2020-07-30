@@ -1,0 +1,335 @@
+header 
+{
+    position: relative;
+    width: 100%;
+    height: 80px;
+    padding: 0% 100px;
+    display: flex;
+    justify-content: space-between;
+    background: $white;
+    padding-top: 1.7rem;
+    z-index: 1000;
+}
+
+header .logo 
+{   
+    text-decoration: none;
+    color: $black;
+    font-size: 21px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    .text_primary
+    {
+        color: $green;
+    }
+}
+
+header nav ul 
+{   
+    position: relative;
+    display: flex;
+}
+
+header nav ul 
+{
+    position: relative;
+    list-style: none;
+}
+
+header nav ul li a 
+{
+   position: relative;
+   color: $black;
+   padding: 9px 20px;
+   display: inline-block;
+   text-decoration: none;
+   font-weight: 500;
+}
+
+
+header nav ul li .active::before 
+{
+    content: "";
+    position: absolute;
+    left: 21px;
+    right: 21px;
+    height: 2px;
+    background: $green;
+    bottom: 0;
+}
+
+header nav ul li .active {
+    color: $green;
+    &:hover 
+        {
+    color: $black;    
+    }
+}
+
+.bugger 
+{
+    display: none;
+}
+
+.right__nav 
+{
+    display: none;
+}
+
+
+
+
+@include mediaLg 
+{
+    .bugger 
+    {
+        display: inline;
+        font-size: 2rem;
+        position: relative;
+        z-index: 9999;
+        cursor: pointer;
+        padding-right: 2rem;
+    }
+
+    .Main__nav 
+    {
+        display: none;
+    }
+
+    .side__mobile-menu  
+    {
+        position: relative;
+    }
+
+    .right__nav 
+    {
+        width: 200px;
+        position: fixed;
+        right: 0;
+        z-index: 999;
+        padding-top: 30px;
+        background: $white;
+        height: 100vh;
+        top: 2;
+        position: fixed;
+        right: -40vw;
+        transition: right 0.5s ease;
+        display: block;
+    }
+
+    .right__nav.open 
+    {
+        right: 0%;
+    }
+
+
+    .right__nav ul 
+    {
+        
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        position: relative;
+        font-size: 1.2rem;
+        
+    }
+
+    .right__nav ul li a {
+        text-decoration: none;
+        color: $black;
+    }
+    .right__nav ul li
+    {
+        display: block;
+        position: relative;
+        padding: 2rem;
+    }
+
+    .right__nav ul li .active 
+    {
+        color: $green;
+    }
+
+    header .logo 
+    {
+        padding-left: 2rem;
+    }
+
+       header 
+    {
+        padding: 0%;
+        padding-top: 2rem;
+    }
+    
+
+}
+
+
+@include mediaMd 
+{
+    .bugger 
+    {
+        display: inline;
+        font-size: 2rem;
+        position: relative;
+        z-index: 9999;
+        cursor: pointer;
+        padding-right: 2.2rem;
+    }
+
+    .Main__nav 
+    {
+        display: none;
+    }
+
+    .side__mobile-menu  
+    {
+        position: relative;
+    }
+
+    .right__nav 
+    {
+        width: 200px;
+        position: fixed;
+        right: 0;
+        z-index: 999;
+        padding-top: 30px;
+        background: $white;
+        height: 100vh;
+        top: 2;
+        position: fixed;
+        right: -40vw;
+        transition: right 0.5s ease;
+        display: block;
+    }
+
+    .right__nav.open 
+    {
+        right: 0%;
+    }
+
+
+    .right__nav ul 
+    {
+        
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        position: relative;
+        font-size: 1.2rem;
+        
+    }
+
+    .right__nav ul li a {
+        text-decoration: none;
+        color: $black;
+    }
+    .right__nav ul li
+    {
+        display: block;
+        position: relative;
+        padding: 2rem;
+    }
+
+    .right__nav ul li .active 
+    {
+        color: $green;
+    }
+
+    header .logo 
+    {
+        padding-left: 2rem;
+    }
+    
+    header 
+    {
+       
+        padding: 0%;
+        padding-top: 2rem;
+    }
+}
+
+
+@include mediaSm 
+{
+    .bugger 
+    {
+        display: inline;
+        font-size: 2rem;
+        position: relative;
+        z-index: 9999;
+        cursor: pointer;
+        padding-right: 2.2rem;
+    }
+
+    .Main__nav 
+    {
+        display: none;
+    }
+
+    .side__mobile-menu  
+    {
+        position: relative;
+    }
+
+    .right__nav 
+    {
+        width: 200px;
+        position: fixed;
+        right: 0;
+        z-index: 999;
+        padding-top: 30px;
+        background: $white;
+        height: 100vh;
+        top: 2;
+        position: fixed;
+        right: -60vw;
+        transition: right 0.5s ease;
+        display: block;
+    }
+
+    .right__nav.open 
+    {
+        right: 0%;
+    }
+
+
+    .right__nav ul 
+    {
+        
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        position: relative;
+        font-size: 1.2rem;
+        
+    }
+
+    .right__nav ul li a {
+        text-decoration: none;
+        color: $black;
+    }
+    .right__nav ul li
+    {
+        display: block;
+        position: relative;
+        padding: 2rem;
+    }
+
+    .right__nav ul li .active 
+    {
+        color: $green;
+    }
+
+    header .logo 
+    {
+        padding-left: 2rem;
+    }
+    
+    header 
+    {
+       
+        padding: 0%;
+        padding-top: 2rem;
+    }
+}
