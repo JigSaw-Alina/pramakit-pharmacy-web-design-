@@ -4,6 +4,8 @@
     margin: 0%;
     box-sizing: border-box;
     font-family: sans-serif;
+    scroll-behavior: smooth;
+    
 }
 
 
@@ -28,12 +30,14 @@ body
 {
     padding: 60px 20px;
     position: relative;
+    scroll-snap-align: center
 }
 
 .second_section_container 
 {
     padding: 0%;
     position: relative;
+    scroll-snap-align: center
 }
 
 

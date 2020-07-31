@@ -4,7 +4,7 @@ import React from 'react'
 
 const CostomerView = () => (
     <div className="second_section_container">
-     <section className="costumer">
+     <section className="costumer" id="about">
       <div className="costumer__contentBx">
         <h2>Happy <span className="costumer__content">Customers</span></h2>
         <img src="/image/customer.gif"/>

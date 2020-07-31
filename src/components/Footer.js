@@ -7,7 +7,7 @@ import { MdMail } from 'react-icons/md';
 
 const Footer = () => (
     <div className="second_section_container">
-      <footer className="footer">
+      <footer className="footer" id="contact">
        <div className="container__footer">
          <div className="footer__contentBx">
             <div className="footer__about">

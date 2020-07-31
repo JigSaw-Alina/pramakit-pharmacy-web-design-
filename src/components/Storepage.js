@@ -3,7 +3,7 @@ import React from 'react';
 
 const Storepage = () => (
    <div className="second_section_container">
-     <section className="store">
+     <section className="store" id="store">
         <div className="store_container">
           <div className="storeBx">
             <div>

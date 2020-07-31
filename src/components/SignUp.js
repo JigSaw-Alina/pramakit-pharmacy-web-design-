@@ -4,7 +4,7 @@ import React from 'react'
 
 const SignUp = () => (
     <div className="second_section_container">
-      <section className="sub_page">
+      <section className="sub_page" id="product">
       <img src="image/signUp.jpg" />
       <div className="content">
         <h2>Sign up for discount up to 55% OFF</h2>
